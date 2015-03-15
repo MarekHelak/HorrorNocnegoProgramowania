@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/miejsce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/_tmiejsce"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/opis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/opis"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/jeden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/opcja_1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#BB0000" />
+
+            <TextView
+                android:id="@+id/dwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/opcja_2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#BB0000" />
+
+            <TextView
+                android:id="@+id/trzy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/opcja_3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#BB0000" />
+
+            <TextView
+                android:id="@+id/cztery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/opcja_4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#BB0000" />
+
+            <TextView
+                android:id="@+id/przedmioty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="3dp"
+                android:text="@string/przedmioty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:text="@string/menu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#BB0000" />
+
+</RelativeLayout>

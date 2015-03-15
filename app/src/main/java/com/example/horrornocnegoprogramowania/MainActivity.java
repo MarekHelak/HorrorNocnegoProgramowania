@@ -1,0 +1,26 @@
+package com.example.horrornocnegoprogramowania;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class MainActivity extends Activity {
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.scena);
+
+		KontrolerGry kontroler = new KontrolerGry();
+		
+		kontroler.start(this);
+		
+		SlideParser.tekstDoScenariusza(this, "Horror.txt");
+		kontroler.go(Scenariusz.listaScen.get("1"));
+		
+    }
+		
+}
+			
+
+	
+

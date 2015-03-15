@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Horror nocnego programowania</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="_tmiejsce">\\tMiejsce</string>
+    <string name="opis">Opis</string>
+    <string name="opcja_1">Opcja 1</string>
+    <string name="opcja_2">Opcja 2</string>
+    <string name="opcja_3">Opcja 3</string>
+    <string name="opcja_4">Opcja 4</string>
+    <string name="rysuneczek_">Rysuneczek :)</string>
+    <string name="menu">Menu</string>
+    <string name="przedmioty">Przedmioty:</string>
+
+</resources>

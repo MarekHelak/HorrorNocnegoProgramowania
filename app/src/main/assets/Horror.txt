@@ -1,0 +1,167 @@
+﻿[ID]0
+//By Marek Helak
+//
+//Wszystkie działania muszą być zamknięte w nawiasach. Inaczej program pominie daną sekcję przy kompilacji.
+//Można użyć maksymalnie 4 opcje. Krótki opis następujących sekcji: 
+//ID: identyfikator slajdu
+//miejsce: Nagłówek("header") Główny opis wykorzystywany np. do lokacji lub innych
+//opis: Opis("Description") Opis danego miejsca, sytuacji lub fragment rozmowy. Lub cokolwiek, co przyjdzie Ci na myśl.
+//opcja: opis danej opcji
+//przedmiot: nazwa przedmiotu, cechy, statystyki lub czegokolowiek co przyjdzie Ci na myśl w chwili wejścia do danego miejsca
+[end]
+
+
+[ID]1
+[miejsce]Pokój
+[opis]4 nad ranem. Siedzisz przed biurkiem w przyciemnionym pokoju. Kurdę, Twoja głowa. Jeszcze przed chwilą twój kot gdzieś miauczał. Ciekawe, kto stworzył tych miauczących debili. Zastanawiasz się co też tak programowałeś dniem i nocą
+[opcja1->PROGRAM]Spróbuj spojrzeć w ekran i przeanalizować to, co pisałeś.
+[opcja1&kawa->PROGRAM_KAWA]Użyj kawy do ogarnięcia programu.
+[opcja2->3]Rozejrzyj się za kotem.
+[opcja3->4]Późno. Czas iść spać.
+[opcja4->KAWA]Pójdź zrobić sobie kawę.
+[end]
+
+[ID]PROGRAM
+[miejsce]Pokój
+[opis]Widzisz... program. Z licznymi przyciskami. Nie wiesz dlaczego zacząłeś pisać ten program. Nic nie rozumiesz
+[opcja1->3]Rozejrzyj się za kotem
+[opcja2->4]Idź spać
+[opcja3->KAWA]Zrób sobie kawę
+[end]
+
+[ID]3
+[miejsce]Pokój
+[opis]Gdzie idziesz go szukać?
+[opcja1->LAZIENKA]Do łazienki
+[opcja2->6]Do kuchni 
+[opcja3->DRUGI_POKOJ]Do drugiego pokoju 
+[opcja4->KRZYK]Krzyczysz "GDZIE JESTEŚ KOCIE??"
+[end]
+
+[ID]4
+[miejsce]Łóżko
+[opis]Próba snu okazuje się nawet nie próbą generalną. Nie możesz zasnąć. Twój kot miauczy z siłą Iron Maiden
+[opcja1->3]Idziesz go szukać
+[opcja2->PROGRAM]Pisanie programu nie było złe. Idziesz zobaczyć monitor
+[opcja2(kawa)>PROGRAM_KAWA]Kawa chyba Ci pomoże!
+[opcja3->KAWA]Kawa to najlepszy pomysł!
+[end]
+
+[ID]KAWA
+[miejsce]Kuchnia
+[przedmiot]kawa
+[opis]Szekspirowskim krokiem wkraczasz do swojej kuchni. Otwierasz szafkę i rozpakowujesz nowego Jacobsa. Green. Tak. Najlepszy. Zaparzyłeś i wypiłeś dwie szklanki. Nadal słyszysz uparte miauczenie.
+[opcja1->4]Świetnie. Idę spać.
+[opcja2->3]Znajdź kota
+[end]
+
+[ID]6
+[miejsce]Kuchnia
+[opis]Jesteś w kuchni. Przetrząsnąłeś wszystko; a w zasadzie nic. Pustą lodówkę, puste szafki i pusty chlebownik. W zasadzie wszystko co puste. Prócz paru kilo kawy nic nie znajdujesz.
+[opcja1->LAZIENKA]Idziesz szukać kota do łazienki
+[opcja2->DRUGI_POKOJ]idzisz szukać do drugiego pokoju.
+[opcja3->KRZYK]Krzyczysz "KOOOCIEEEEEE".
+[opcja4->KAWA]No nic, wypijasz kawę.
+[end]
+
+[ID]LAZIENKA
+[miejsce]Łazienka
+[opis]Niepewnym krokiem wkracasz do miejsca, gdzie królowie chodza piechotą. Przypominają Ci się najgorsze koszmary dzieciństwa. Czy aby na pewno chcesz wejść do tej mrocznej otchłani?
+[opcja1->LAZIENKA_SRODEK]Tak.
+[opcja2->1]Nie.
+[end]
+
+[ID]DRUGI_POKOJ
+[miejsce]Drugi pokój
+[opis]To twój pokój gościnny. Zwykłeś tutaj balować do 6 rano. Nie mogłes dłużej, bo zwykle na 7 miałeś egzaminy. Gdzieś tutaj może być kot. Gdzie go szukasz?
+[opcja1->KANAPA]Pod kanapą
+[opcja2->TELEWIZOR]Za telewizorem
+[opcja3->LAZIENKA]Może jednak łazienka?
+[end]
+
+[ID]KRZYK
+[miejsce]Drugi pokój
+[opis]To twój pokój gościnny. Zwykłeś tutaj balować do 6 rano. Nie mogłes dłużej, bo zwykle na 7 miałeś egzaminy. Gdzieś tutaj może być kot. Gdzie go szukasz?
+[opcja1->KANAPA]Pod kanapą
+[opcja2->TELEWIZOR]Za telewizorem
+[opcja3->MAC]Za Mac
+[end]
+
+[ID]PROGRAM_KAWA
+[miejsce]Pokój
+[opis]Po wypiciu Javy tzn. kawy zaczynasz rozumieć. To co widzisz przed sobą to Java.
+[opcja1->HELLO_WORLD]Napisz "Hello World".
+[opcja2->SHUT_DOWN]Wyłącz komputer.
+[opcja3->4]Idź spać.
+[end]
+
+[ID]HELLO_WORLD
+[miejsce]Pokój
+[opis] "---Boot online--- Welcome in Matrix. You wanted to know, what is Matix?" Czujesz się totalnie naćpany. Program chyba źle działa
+[opcja1->YES]Napisz "Yes"
+[opcja2->YES]Nie rozumiesz angielskiego. Wciskasz enter.
+[opcja3->NO]Odpisujesz "Nie rozmawiam z obcymi".
+[opcja4->SHUT_DOWN]Pewnie na ostatniej imprezie za dużo ćpałeś. Może przez niepewną płci lasencję, która zaproponowała Ci zioło. Wyłączasz komputer.
+[end]
+
+[ID]NO
+[miejsce]Pokój
+[opis] "---goodbye Neo---". Słyszesz tylko szur modemu. Ping ping - yong yong. Szrrererere. Ping ping. Co robisz dalej?
+[opcja1->SHUT_DOWN]Wyłączasz komputer
+[opcja2->4]Idziesz spać
+[opcja3->KANAPA]Szukasz kota
+[opcja4->0]
+[end]
+
+[ID]PRZYPOMNIENIE
+[miejsce]Pokój
+[opis]Przypomniałeś sobie. Twój kot jest pod kanapą w drugim pokoju!
+[opcja1->KANAPA]Idziesz po swojego kota
+[opcja2->4]Bez problemu. Dam radę zasnąć.
+[opcja3->0]
+[opcja4->0]
+[end]
+
+[ID]SEN_2
+[miejsce]Pokój
+[opis]"MIAAAUUUUUUUUUUUUUUUUUUUUU!". Zdaje się, że przegrywasz już 1:0 z kotem.
+[opcja1->KANAPA]Idziesz po swojego kota
+[opcja2->4]
+[opcja3->0]
+[opcja4->0]
+[end]
+
+[ID]SHUT_DOWN
+[miejsce]Pokój
+[opis]W pokoju zapanowała ciemność. Czarno. Po prostu. Zastanawia. Cię tylko, co dalej.
+[opcja1->KANAPA]Włączasz komputer i sprawdzasz jeszcze raz program
+[opcja2->4]Bez problemu. Dam radę zasnąć.
+[opcja3->0]
+[opcja4->0]
+[end]
+
+[ID]KANAPA
+[miejsce]Pokój
+[opis]Znalazłeś go. Grube, rude i najwredniejsze stworzenie na świecie. Widzisz jak podrapał całą kanapę.
+[opcja1->KOT-zamknijmorde]CO TY ZROBIŁEŚ??
+[opcja2->KOT-dajeszKopa]Bez problemu. Dam radę zasnąć.
+[opcja3->4]Świetnie. Teraz mogę iść spać.
+[opcja4->0]
+[end]
+
+[ID]KOT-zamknijmorde
+[miejsce]Pokój
+[opis]"Zamknij mordę"
+[opcja1->KOT-nie]"KOCIE, TY GADASZ??"
+[opcja2->4]Świetnie. Sprzedane zioło wczoraj było zbyt tanie. Teraz mogę iść spać.
+[opcja3->KOT-dajKopa]Dajesz kopa kotu.
+[opcja3(kawa)->KOT-rozwal]Używasz mocy kofeiny do kopa z półobrotu.
+[opcja4->KAWA]Nie ważne. Wracasz do kuchni.
+[end]
+
+[ID]KOT-rozwal
+[miejsce]Pokój
+[opis]Kot nie miał najmniejszych szans. Kop był szybszy niż Chucka Norrisa. Kotu wypadło oboje oczu. Biega w kółko i obija się o ściany
+[opcja1->KOT-cierpi]Popatrz na niego, jak cierpi.
+[opcja2->OCZY]Spróbuj mu ponownie wstawić oczy.
+[end]
